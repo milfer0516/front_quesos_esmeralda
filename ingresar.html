@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quesos y Lacteos la Esmeralda</title>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Estilos  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/dc6deb0be1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="contenido-texto">
+            <div class="contenedor ">
+                <div class="barra">
+                    <a href="index.html" class="logo">
+                        <h1 class="logo__nombre no-margin centrar-texto">La<span class="logo__bold">Esmeralda</span>
+                        </h1>
+                    </a>
+                    <nav class="navegacion">
+                        <a href="index.html" class="navegacion__enlace">Inicio</a>
+                        <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                        <a href="contacto.html" class="navegacion__enlace">Contactanos</a>
+                        <a href="ingresar.html" class="navegacion__enlace">Ingresar</a>
+
+                    </nav>
+                </div>
+            </div>
+            <div class="header__texto ">
+                <h2 class="no-margin centrar-texto">Quesos y Lacteos la Esmeralda</h2>
+                <p class="no-margin centrar-texto texto-color">Queso doble crema semigraso semiduro</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="contenedor">
+        <h2 class="productos centrar-texto">Registrate</h2>
+        <div>
+            <form action="" class="formulario-registro container-form" id="formulario-registro">
+                <div class="formulario-grupo" id="formulario-grupo">
+                    <!-- Grupo: Usuario -->
+                    <label for="usuario" class="formulario-label">Usuario</label>
+                    <div class="formulario__grupo-input">
+                        <input class="formulario__input" type="text" name="usuario" placeholder="Ingrese su usuario"
+                            id="usuario">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">El usuario debe tener de 4 a 16 dígitos y solo puede contener
+                        números, letras y guíon bajo.</p>
+                </div>
+                <!-- Grupo: Nombre -->
+                <div>
+                    <label for="nombre" class="formulario-label">Nombre</label>
+                    <div class="formulario__grupo-input">
+                        <input class="formulario__input" type="text" name="nombre" placeholder="Ingrese su nombre"
+                            id="nombre">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">El nombre debe tener de 4 a 16 dígitos y solo puede contener
+                        números, letras y guíon bajo.</p>
+                </div>
+                <!-- Grupo: Contraseña -->
+                <div>
+                    <label for="password" class="formulario-label">Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input class="formulario__input" type="password" name="password" id="password">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 digitos.</p>
+                </div>
+
+                <!-- Grupo: Repetir Contraseña -->
+                <div>
+                    <label for="password2" class="formulario-label">Repetir Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input class="formulario__input" type="password" name="password2" id="password2">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                </div>
+                <!-- Grupo: Correo Electrónico -->
+                <div>
+                    <label for="correo" class="formulario-label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                        <input class="formulario__input" type="email" name="correo" placeholder="john@correo.com"
+                            id="correo">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo contener letras, puntos, guiones y guion bajo.</p>
+                </div>
+                <!-- Grupo: Teléfono -->
+                <div>
+                    <label for="usuario" class="formulario-label">Teléfono</label>
+                    <div class="formulario__grupo-input">
+                        <input class="formulario__input" type="tel" name="usuario" placeholder="3003456789"
+                            id="usuario">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">El teléfono solo puede contener 14 dígitos.</p>
+                </div>
+                <!-- Grupo: Terminos -->
+                <div class="formulario__grupo-terminos">
+                    <label class="formulario-label">
+                        <input class="formulario-checkbox" type="checkbox" name="terminos" id="terminos">
+                        Acepto los Terminos y Condiciones
+                    </label>
+                </div>
+                <!-- Grupo: Mensaje Error -->
+                <div class="formulario-mensaje">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor rellenar el
+                        formulario
+                        correctamente</p>
+                </div>
+                <!-- Grupo: Boton  -->
+                <div class="formulario__grupo-btn-enviar">
+                    <button type="submit" href="/" class="formulario__btn">Crear cuenta</button>
+                    <p class="fomulario__mensaje-exito" id="fomulario__mensaje-exito">Formulario enviado
+                        exitosamente!</p>
+                </div>
+        </div>
+
+        </form>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="contenedor-footer">
+            <div class="contenedor-icons">
+                <div class="icons-footer">
+                    <a href="#"><i class="fa-brands fa-facebook icons"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram-square icons"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp-square icons"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope icons"></i></a>
+                </div>
+            </div>
+            <div class="contenedor-icons footer-contacto">
+                <p>Pedidos Bogotá:</p>
+                <p>Keneddy, Patio Bonito</p>
+                <p>Cel: 3115528581</p>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p class="text-copyright">Copyright &#169 2022, Todos los Derechos Reservados</p>
+            <h6>Designed by Milfer A. Muñoz</h6>
+        </div>
+    </footer>
+</body>
+
+</html>
